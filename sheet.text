@@ -1,0 +1,19 @@
+https://github.com/engsahaly/Laravel_testing_series_phpunit
+###########################################################
+php artisan r:l --path=categories
+ GET|HEAD        categories ................................................................................... categories.index › CategoryController@index
+  POST            categories ................................................................................... categories.store › CategoryController@store
+  GET|HEAD        categories/create .......................................................................... categories.create › CategoryController@create
+  GET|HEAD        categories/{category} .......................................................................... categories.show › CategoryController@show
+  PUT|PATCH       categories/{category} ...................................................................... categories.update › CategoryController@update
+  DELETE          categories/{category} .................................................................... categories.destroy › CategoryController@destroy
+  GET|HEAD        categories/{category}/edit ..................................................................... categories.edit › CategoryController@edit
+
+
+########################## TESTING ##########################
+
+php artisan make:test Categories/CategoryRetrievingTest
+
+php artisan test --filter=CategoryRetrievingTest
+
+
